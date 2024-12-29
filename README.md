@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Birthday Adventure Puzzle Game
+
+A personalized birthday treasure hunt application created as a special birthday gift. This interactive experience was developed using Cursor AI assistance, combining modern web technologies with creative puzzle design.
+
+## About
+
+This project is a unique digital birthday present that leads the birthday person through a series of engaging puzzles and clues, ultimately guiding them to real physical gifts. Each puzzle is thoughtfully designed to create af fun treasure hunt experience.
+
+## Features
+
+- Multiple puzzle types:
+  - Text-based riddles
+  - Morse code decoder
+  - Cipher puzzles
+  - Interactive maps
+  - Image puzzles
+  - Multiple choice image questions
+- Progress tracking
+- Sound effects and animations
+- Talking head animation
+- Responsive design
+- Confetti celebration on completion
+
+## Tech Stack
+
+- Next.js 15
+- React 19
+- TypeScript
+- TailwindCSS
+- Framer Motion
+- Leaflet (for maps)
+- Howler.js (for sound effects)
+
+## Development
+
+This project was developed with the assistance of Cursor AI, showcasing how AI tools can be used to create personalized and meaningful gifts. The AI helped with:
+- Code structure and organization
+- Component development
+- TypeScript type definitions
+- Puzzle logic implementation
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
 
+2. Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open [http://localhost:3000](http://localhost:3000) with your browser to start the adventure.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/src/components` - React components
+- `/src/components/puzzles` - Individual puzzle type components
+- `/src/context` - React context providers
+- `/src/utils` - Utility functions
+- `/src/types` - TypeScript type definitions
+- `/public` - Static assets (images, sounds)
 
-## Learn More
+## Environment Setup
 
-To learn more about Next.js, take a look at the following resources:
+The project uses several environment variables for configuration. Create a `.env.local` file in the root directory with the required variables.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Uses TypeScript for type safety
+- Implements responsive design with TailwindCSS
+- Features client-side state management with React Context
+- Includes progress persistence using localStorage
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Private project - All rights reserved
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+Created with ❤️ and Cursor AI
