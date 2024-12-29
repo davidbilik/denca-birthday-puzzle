@@ -1,17 +1,18 @@
 import { Howl } from 'howler';
+import { getAssetPath } from './assetPath';
 
 type SoundType = 'start' | 'correct' | 'incorrect' | 'complete' | 'hint';
 
 const sounds: Record<SoundType, string[]> = {
-  start: ['/sounds/start.m4a'],
+  start: [getAssetPath('/sounds/start.m4a')],
   correct: [
-    '/sounds/correct1.m4a',
-    '/sounds/correct2.m4a',
-    '/sounds/correct3.m4a'
+    getAssetPath('/sounds/correct1.m4a'),
+    getAssetPath('/sounds/correct2.m4a'),
+    getAssetPath('/sounds/correct3.m4a')
   ],
-  incorrect: ['/sounds/incorrect.m4a'],
-  complete: ['/sounds/complete.m4a'],
-  hint: ['/sounds/hint.m4a']
+  incorrect: [getAssetPath('/sounds/incorrect.m4a')],
+  complete: [getAssetPath('/sounds/complete.m4a')],
+  hint: [getAssetPath('/sounds/hint.m4a')]
 };
 
 let talkingCallbacks = {

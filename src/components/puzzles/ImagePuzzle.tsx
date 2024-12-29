@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import { getAssetPath } from '@/utils/assetPath';
 
 type ImagePuzzleProps = {
   src: string;
@@ -12,7 +13,7 @@ export default function ImagePuzzle({ src, alt }: ImagePuzzleProps) {
     <div className="space-y-4">
       <div className="relative w-full aspect-video rounded-lg overflow-hidden">
         <Image
-          src={src}
+          src={getAssetPath(src)}
           alt={alt}
           fill
           className="object-cover blur-sm hover:blur-none transition-all duration-300"
