@@ -12,16 +12,16 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
   basePath,
   // Make sure assets are looked up relative to the base path
   assetPrefix: basePath,
-  // This tells Next.js to add the base path to asset imports
-  experimental: {
-    images: {
-      allowFutureImage: true,
-    },
-  },
 }
 
 module.exports = nextConfig 
