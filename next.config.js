@@ -2,11 +2,11 @@
 const isGithubActions = process.env.GITHUB_ACTIONS || false
 
 let basePath = ''
-if (isGithubActions) {
-  // Trim off `<owner>/` from the repo name
-  const repo = 'denca-birthday-puzzle'
-  basePath = `/${repo}`
-}
+// if (isGithubActions) {
+//   // Trim off `<owner>/` from the repo name
+//   const repo = 'denca-birthday-puzzle'
+//   basePath = `/${repo}`
+// }
 
 const nextConfig = {
   output: 'export',
@@ -31,4 +31,4 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig;
+module.exports = nextConfig
